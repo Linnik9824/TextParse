@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="scripts\jquery-ui-1.12.1\external\jquery\jquery.js"></script> -->
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="scripts\jquery-ui-1.12.1\jquery-ui.js"></script>
+    <script src="scripts\main.js"></script>
+    <script src="scripts/ParseFiles.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="back-dialog" id="dialog">
+        <!-- Блок с нашим контентом -->
+        <div class="dialog-content">
+            <!-- Заголовок и кнопка закрытия окна -->
+            <div class="dialog-title">
+                <span>Заголовок диалогового окна</span>
+                <a class='close-dialog' href='javascript: closedialog()'></a>
+            </div>
+            <div class="statusInfo">file <span class="current-file">.</span> in <span id="All-Files">.</span> files</div>
+            <div class="progressDiv"> 
+                <progress value="0" max="100" id="progressBar"></progress>
+            </div>
+            <div class="progressStatusInfo">
+                <p>performing step <span class="current-file">.</span> check title <span id="Name-of-current-file"></span></p>
+            </div>
+            <div class="startStopPanel">
+                <input type="button" value="Start" onclick="AlertInfo()" class="button">
+                <input type="button" value="Cancel" onclick="Cancel()" class="button">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
